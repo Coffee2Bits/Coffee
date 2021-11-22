@@ -6,9 +6,10 @@ def run_cli():
     args = arg_parser.parse_args()
     args_dict = vars(args)
 
+    print(args_dict)
     interval_time = args_dict.get("interval") or 300
 
-    keep_alive()
+    keep_alive(interval_time)
    
     
 
