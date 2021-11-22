@@ -1,5 +1,5 @@
 import argparse
-import coffee.coffee
+from coffee.coffee import keep_alive
 
 def run_cli():
     arg_parser = setup_argparser()
@@ -8,7 +8,7 @@ def run_cli():
 
     interval_time = args_dict.get("interval") or 300
 
-    coffee.keep_alive()
+    keep_alive()
    
     
 
